@@ -19,6 +19,7 @@ button {
     background-color: yellowgreen;
     overflow: none;
     border: none;
+
 }
 
 #main {
@@ -34,16 +35,26 @@ button {
     justify-content: space-between;
 }
 
-.btn {
+.btn, #start {
     padding: 15px;
     color: white;
     font-size: 30px;
     border: 1px solid white;
     border-radius: 10px;
     transition: all 0.5s;
+}
+.btn:hover {
+    background-color: white;
 
 }
 
-h1 {
+#result {
+    margin-top: 10px;
+    font-size: 30px;
+}
+.question {
     font-size: 50px;
+}
+.none {
+    display: none !important;
 }

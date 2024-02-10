@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#start {
+    font-size: 50px;
+    background-color: orange;
+}
+button {
+    background-color: yellowgreen;
+    overflow: none;
+    border: none;
+}
+
+#main {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn_block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 15px;
+    color: white;
+    font-size: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: all 0.5s;
+
+}
+
+h1 {
+    font-size: 50px;
+}

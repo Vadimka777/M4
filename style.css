@@ -50,10 +50,10 @@ button {
 
 #result {
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 70px;
 }
 .question {
-    font-size: 50px;
+    font-size: 70px;
 }
 .none {
     display: none !important;

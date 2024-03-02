@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.2/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        height: 100vh;
+      }
+      #form {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: all 0.5s;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body class="bg-warning d-flex align-items-center justify-content-center">
+    <button type="button" class="btn btn-outline-success" id="open">
+      <i class="fas fa-dragon"></i>
+      <span>Войти</span>
+    </button>
+
+    <div class="bg-danger position-absolute p-3 rounded-4 " id="form">
+        <span>Введите логин</span>
+        <input type="text" class="form-control">
+        <span>Ведите пароль</span>
+        <input type="text" class="form-control">
+        <button type="button" class="btn btn-success mt-3" id="close">
+            <i class="fas fa-dice-d20"></i>
+            <span>Войти</span>
+    </div>
+
+    <script>
+        let open = document.getElementById("open")
+        let close = document.getElementById("close")
+        let form = document.getElementById("form")
+
+        function openForm() {
+            form.style.top = "50%"
+        }
+        close.addEventListener("click", closeForm)
+
+    function closeForm() {
+        form.style.top = "-50%"
+    }
+     open.addEventListener("click", openForm)
+    </script>
+  </body>
+</html>

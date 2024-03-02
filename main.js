@@ -30,7 +30,7 @@ function start_program() {
 function generateQuestion() {
   let question = allQuestions[currectQuestions].question;
   main.innerHTML = `<h1 class = "question">${question}</h1>`;
-  
+
   let btn_block = "";
   let answers = allQuestions[currectQuestions].answers;
   for (let i of answers) {
@@ -40,25 +40,24 @@ function generateQuestion() {
 }
 
 function checkQuestion(num) {
-  let currect = allQuestions[currectQuestions].currect
+  let currect = allQuestions[currectQuestions].currect;
   if (num == currect) {
     countSuccess += 1;
   }
   currectQuestions += 1;
   if (allQuestions.length > currectQuestions) {
-    generateQuestion()
-  }
-  else {
-    stopQuize()
+    generateQuestion();
+  } else {
+    stopQuize();
   }
 }
 function stopQuize() {
-  start.classList.remove("none")
-  main.classList.add("none")
-  result.classList.remove("none")
+  start.classList.remove("none");
+  main.classList.add("none");
+  result.classList.remove("none");
 
-  result.innerHTML = `Решено ${countSuccess} из ${allQuestions.length}`
+  result.innerHTML = `Решено ${countSuccess} из ${allQuestions.length}`;
 
-  currectQuestions = 0
-  countSuccess = 0
+  currectQuestions = 0;
+  countSuccess = 0;
 }
